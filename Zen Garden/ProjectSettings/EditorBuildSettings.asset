@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TeleportMovement.unity
     guid: 099150150c4db054083fb1dbb6d1652c
   - enabled: 0
-    path: Assets/Scenes/BaseScene.unity
+    path: Assets/Scenes/StartScene.unity
     guid: ec13c5db5b5a4b940b7b5c664867239d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 82540a5b29e28c14eb7ec57e11dfa3ae, type: 2}
