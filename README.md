@@ -16,7 +16,7 @@ Credits (also given at the end of the game):
 Elias:
 Start Screen
 End Screen
-__________
+_________
 
 Ivy:
 __________
