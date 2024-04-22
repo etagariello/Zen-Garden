@@ -52,6 +52,7 @@ public class RockStackingColliding : MonoBehaviour
 
     private void Start()
     {
+        
         // assign values
 
         GhostRocks = gameObject;
@@ -115,18 +116,18 @@ public class RockStackingColliding : MonoBehaviour
                 if (RockCount == 4)
                 {
                    // check which text the ui currently has, and change it accordingly
-                    if (RockStacksText.text == "Rock Stacks Complete: \r\n0/3") 
+                    if (RockStacksText.text == "Rock Stacks Complete: 0/3") 
                     {
                         // change the text of the UI, by adding a point
-                        RockStacksText.text = "Rock Stacks Complete: \r\n1/3";
+                        RockStacksText.text = "Rock Stacks Complete: 1/3";
                     }
-                    if (RockStacksText.text == "Rock Stacks Complete: \r\n1/3")
+                    else if (RockStacksText.text == "Rock Stacks Complete: 1/3")
                     {
-                        RockStacksText.text = "Rock Stacks Complete: \r\n2/3";
+                        RockStacksText.text = "Rock Stacks Complete: 2/3";
                     }
-                    if (RockStacksText.text == "Rock Stacks Complete: \r\n2/3")
+                    else if (RockStacksText.text == "Rock Stacks Complete: 2/3")
                     {
-                        RockStacksText.text = "Rock Stacks Complete: \r\n3/3";
+                        RockStacksText.text = "Rock Stacks Complete: 3/3";
                         RockStacksText.color = Color.green;
                     }
 
