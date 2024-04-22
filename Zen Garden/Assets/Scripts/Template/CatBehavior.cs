@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Ivy; attached to the cat
 public class CatBehavior : MonoBehaviour
 {
     // Initialize player's transform
@@ -24,7 +25,7 @@ public class CatBehavior : MonoBehaviour
     public RuntimeAnimatorController walkingAnimatorController;
     public RuntimeAnimatorController sittingAnimatorController;
 
-    // In the start, get the audiosource component, animator component, and the name of the animator controller at runtime
+    // In the start, get the audiosource component, animator component, and set the name of the animator controller
     void Start() 
     {
         audioSource = GetComponent<AudioSource>();
@@ -44,7 +45,7 @@ public class CatBehavior : MonoBehaviour
             // Smoothly rotate towards the target rotation
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotate, rotationSpeed * Time.deltaTime);
 
-            // Check if we are far enough to follow
+            // Checks if we are far enough to follow
             if (direction.magnitude > stoppingDistance)
             {
                 // Move towards the player
@@ -56,18 +57,18 @@ public class CatBehavior : MonoBehaviour
     // OnTriggerEnter starts when an object enters the Enemy object's sphere collider; Set isFollowing to true
     void OnTriggerEnter(Collider other)
     {
-        // checks if the colliding object is the Player object
+        // Checks if the colliding object is the Player object
         if (other.CompareTag("Player"))
         {
-            // if the colliding object is the Player
+            // If the colliding object is the Player
             Debug.Log("Player detected - follow!");
 
             isFollowing = true;
 
-            // play meow audio
+            // Play meow audio every time re-enter the sphere
             audioSource.Play();
 
-            // change to walking animation
+            // Change to walking animation
             animator.runtimeAnimatorController = walkingAnimatorController;
         }
     }
@@ -75,15 +76,15 @@ public class CatBehavior : MonoBehaviour
     // OnTriggerExit starts when the object exits the Enemy object's sphere collider; Set isFollowing to false
     void OnTriggerExit(Collider other)
     {
-        // checks if the colliding object is the Player object leaving
+        // Checks if the colliding object is the Player object leaving
         if (other.CompareTag("Player"))
         {
-            // stop following and sit
+            // Stop following and sit
             Debug.Log("Player out of range, resume rest");
 
             isFollowing = false;
 
-            // change to sitting animation
+            // Change to sitting animation
             animator.runtimeAnimatorController = sittingAnimatorController;
         }
     } 

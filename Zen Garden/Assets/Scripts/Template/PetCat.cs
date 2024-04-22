@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Ivy; attached to the player controller hands
 public class PetCat : MonoBehaviour
 {
+    // Reference audio source
     private AudioSource audioSource;
 
     void Start()
     {
+        // Get audio component (purring sound)
         audioSource = GetComponent<AudioSource>();
     }
 
