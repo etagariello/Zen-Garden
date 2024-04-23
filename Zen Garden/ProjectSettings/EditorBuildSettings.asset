@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/StartScene.unity
-    guid: ec13c5db5b5a4b940b7b5c664867239d
-  - enabled: 1
     path: Assets/Scenes/TeleportScene.unity
-    guid: 099150150c4db054083fb1dbb6d1652c
+    guid: 377780214093f624bac96b50c377651a
   - enabled: 1
+    path: Assets/Scenes/ZenGarden.unity
+    guid: 9206468a2971ff14e9356f5b9c6aa2d7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/TeleportMovement.unity
+    guid: 099150150c4db054083fb1dbb6d1652c
+  - enabled: 0
     path: Assets/Scenes/WalkingMovement.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:

@@ -54,7 +54,7 @@ public class CatBehavior : MonoBehaviour
         }
     }
 
-    // OnTriggerEnter starts when an object enters the Enemy object's sphere collider; Set isFollowing to true
+    // OnTriggerEnter starts when an player enters the cat's object's sphere collider; Set isFollowing to true
     void OnTriggerEnter(Collider other)
     {
         // Checks if the colliding object is the Player object
