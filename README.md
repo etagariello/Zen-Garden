@@ -15,6 +15,9 @@ The Zen Garden consists of some activities, such as:
 
 or simply enjoy the sunset and listen to calming music.
 
+VIDEO:
+https://youtu.be/Eirq49dx7e0?feature=shared
+
 Credits (also given at the end of the game):
 
 Elias:
