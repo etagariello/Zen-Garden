@@ -23,14 +23,23 @@ Start Screen
 
 End Screen
 
+Movement
+
+Scoring UI
+
+Lanterns
+
+Rock Stacks
 _________
 
 Ivy:
 
-Game Scene
+Game Scene/Environment
 
 Day to Night
 
 Audio
+
+Cat Activities
 
 __________
