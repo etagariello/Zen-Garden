@@ -64,18 +64,26 @@ public class LanternBehavior : MonoBehaviour
 
             // increase the score of released lanterns
             // check which text the ui currently has, and change it accordingly
-            if (LanternsReleasedText.text == "Lanterns Released:  0/3")
+            if (LanternsReleasedText.text == "Lanterns Released:  0/5")
             {
                 // change the text of the UI, by adding a point
-                LanternsReleasedText.text =  "Lanterns Released:  1/3";
+                LanternsReleasedText.text =  "Lanterns Released:  1/5";
             }
-            else if (LanternsReleasedText.text == "Lanterns Released:  1/3")
+            else if (LanternsReleasedText.text == "Lanterns Released:  1/5")
             {
-                LanternsReleasedText.text = "Lanterns Released:  2/3";
+                LanternsReleasedText.text = "Lanterns Released:  2/5";
             }
-            else if (LanternsReleasedText.text == "Lanterns Released:  2/3")
+            else if (LanternsReleasedText.text == "Lanterns Released:  2/5")
             {
-                LanternsReleasedText.text = "Lanterns Released:  3/3";
+                LanternsReleasedText.text = "Lanterns Released:  3/5";
+            }
+            else if (LanternsReleasedText.text == "Lanterns Released:  3/5")
+            {
+                LanternsReleasedText.text = "Lanterns Released:  4/5";
+            }
+            else if (LanternsReleasedText.text == "Lanterns Released:  4/5")
+            {
+                LanternsReleasedText.text = "Lanterns Released:  5/5";
                 LanternsReleasedText.color = Color.green;
             }
 
